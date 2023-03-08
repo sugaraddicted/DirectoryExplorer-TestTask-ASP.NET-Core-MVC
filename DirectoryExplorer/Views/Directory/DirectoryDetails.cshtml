@@ -1,0 +1,15 @@
+﻿@model DirectoryExplorer.Models.DirectoryModel
+
+@if (Model.ChildDirectories.Any())
+{
+    <ul class="text-start">
+        @foreach (var childDirectory in Model.ChildDirectories)
+        {
+            <li>
+                <a asp-action="DirectoryDetails" asp-route-id = "@Model.Id" asp-route-article = "@Model.Name" >
+                    @childDirectory.Name
+                </a>
+            </li>
+        }
+    </ul>
+}

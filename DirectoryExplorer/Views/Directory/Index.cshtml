@@ -1,0 +1,18 @@
+﻿@model DirectoryExplorer.Models.DirectoryModel
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h2>Folder - @Model.Name</h2>
+    <div>
+        <ul class="text-start">
+            @foreach (var childDirectory in Model.ChildDirectories)
+            {
+                <li>
+                    <a asp-controller="Directory" asp-action="DirectoryDetails" asp-route-id="@childDirectory.Id" asp-route-name="@childDirectory.Name">@childDirectory.Name</a>
+                </li>
+            }
+        </ul>
+    </div>
+</div>
