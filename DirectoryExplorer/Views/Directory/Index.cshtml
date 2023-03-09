@@ -10,7 +10,7 @@
             @foreach (var childDirectory in Model.ChildDirectories)
             {
                 <li>
-                    <a asp-controller="Directory" asp-action="DirectoryDetails" asp-route-id="@childDirectory.Id" asp-route-name="@childDirectory.Name">@childDirectory.Name</a>
+                    <a asp-controller="Directory" asp-action="DirectoryDetails" asp-route-id="@childDirectory.Id" asp-route-parent="@Model.Name" asp-route-current= "@childDirectory.Name">@childDirectory.Name</a>
                 </li>
             }
         </ul>

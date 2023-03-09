@@ -6,7 +6,7 @@
         @foreach (var childDirectory in Model.ChildDirectories)
         {
             <li>
-                <a asp-action="DirectoryDetails" asp-route-id = "@Model.Id" asp-route-article = "@Model.Name" >
+                <a asp-action="DirectoryDetails" asp-route-parent="@Model.Name" asp-route-current= "@childDirectory.Name" >
                     @childDirectory.Name
                 </a>
             </li>
