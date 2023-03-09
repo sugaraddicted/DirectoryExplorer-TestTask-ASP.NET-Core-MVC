@@ -47,12 +47,6 @@ namespace DirectoryExplorer.Controllers
             return View("Index", directory);
         }
 
-
-        public IActionResult Privacy()
-        {
-            return View();
-        }
-
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {
