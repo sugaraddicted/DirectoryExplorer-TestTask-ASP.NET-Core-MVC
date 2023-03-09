@@ -12,4 +12,10 @@
 ---
 Для роботи використовувати asp.net mvc.
 
+screenshot 1
+
 <a href="https://ibb.co/1GRh1wX"><img src="https://i.ibb.co/7tr8P6p/image.png" alt="image" border="0"></a>
+
+screenshot 2
+
+<a href="https://ibb.co/X25R98y"><img src="https://i.ibb.co/WxzJQtD/image.png" alt="image" border="0"></a>
